@@ -29,7 +29,9 @@ var (
 
 func usage() {
 	fmt.Fprintf(os.Stderr, "Usage of %s:\n", os.Args[0])
-	fmt.Fprintf(os.Stderr, "\t%s tree\n", os.Args[0])
+	fmt.Fprintf(os.Stderr, "\t%s [command]\n", os.Args[0])
+	fmt.Fprintf(os.Stderr, "For example:\n")
+	fmt.Fprintf(os.Stderr, "\t%s tar zcvf $PWD/app.tar.gz .\n", os.Args[0])
 }
 
 var verbose bool
